@@ -1,0 +1,4 @@
+Metric,SVD,Item-CF,Better,Winner
+RMSE,0.9867,1.1636,Lower,SVD
+MAE,0.7784,N/A,Lower,SVD
+MAP@10,0.6822,0.5811,Higher,SVD
