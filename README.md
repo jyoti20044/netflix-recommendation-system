@@ -46,12 +46,18 @@ netflix_eda.ipynb
 netflix_models.ipynb
 netflix_improvements.ipynb
 netflix_evaluation.ipynb
-## Results
-- SVD achieves RMSE of 0.9867
-- Data sparsity > 99%
-- Cold start problem addressed using Bayesian average scoring
-- SVD++ needs more data to outperform standard SVD
+###Results
+SVD achieves RMSE of 0.9867
+SVD MAP@10 = 0.6822
+Item-CF MAP@10 = 0.5811
+Data sparsity > 99%
+Cold start problem addressed using Bayesian average scoring
+SVD++ needs more data to outperform standard SVD
 
+##Evaluation Setup:
+- Train/Test Split: 80% train · 20% test (Surprise `train_test_split`)
+- Relevance threshold: rating ≥ 3.5 → considered relevant for MAP@10
+  
 ## Dataset
 - Source: Netflix Prize Dataset (Kaggle)
 - Subset: 2M ratings out of 100M total
